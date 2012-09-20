@@ -1,0 +1,195 @@
+@charset "utf-8";
+/* CSS Document */
+
+a{
+  color: #FFFF51;
+  text-decoration:none;
+  }
+a:hover{
+  color: #FFFF51;
+  text-decoration:underline;
+  }
+.blocker{
+  height:100%;
+  width:100%;
+  position:absolute;
+  z-index:999;
+  background:#333;
+  opacity:0.0;
+  left:-100%
+  }
+body {
+  background: #333;
+  color: #333;
+  }
+button{
+  font-family: 'Oswald', sans-serif;
+  font-size:80%;
+  color:#666
+  }
+button.punch{
+  background: #ddd;
+  border-top: 1px solid #38538c;
+  border-right: 1px solid #1f2d4d;
+  border-bottom: 1px solid #151e33;
+  border-left: 1px solid #1f2d4d;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 10px 1px #cccccc, 0px 1px 0 #1d2c4d, 0 1px 0px #1f3053, 0 4px 3px 1px #111111;
+  color: #666;
+  line-height: 1;
+  margin-bottom: 10px;
+  padding: 8px 0 21px 0;
+  text-align: center;
+  width: 75px;
+  height: 16px;
+  background-clip: padding-box;
+  margin-top: 3px; 
+  }
+button.punch:hover{
+  box-shadow: inset 0 0px 20px 1px #eeeeee, 0px 1px 0 #1d2c4d, 0 1px 0px #1f3053, 0 4px 3px 1px #111111;
+  cursor: pointer; 
+  }
+#cancel{
+  top:436px;
+  }
+#dismiss{
+  position:absolute;
+  left:40%;
+  top:85%;
+  }
+h1{
+  font-family: 'Oswald', sans-serif;
+  color: #FFFF51;
+  margin-left:20px;
+  }
+#highlight{
+  height:45%;
+  position:absolute;
+  top:106px;
+  left:-10px;
+  cursor:text;
+  background: #F0F;
+  opacity:.1;
+  }
+input.fileInput{
+  position: relative;
+  height: 100%;
+  width: auto;
+  opacity: 0;
+  -moz-opacity: 0;
+  filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+  cursor:pointer;
+  }
+#instructionHeader{
+  padding-left: 16px;
+  }
+#instructions{
+  position:absolute;
+  left:216px;
+  }
+.instructionText{
+  font-size:90%;
+  padding:10px;
+  font-family: 'Oswald', sans-serif;
+  color: #F0F;
+  position:absolute;
+  left:36px;
+  }
+#instructionOverlay{
+  width:530px;
+  height: 350px;
+  z-index:1000;
+  top:20%;
+  left:-530px;
+  opacity:0.0;
+  }
+label.fileButton
+{
+  width: 87px;
+  height: 47px;
+  background: url(../img/button.png) 0 0 no-repeat;
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  position:absolute;
+  }
+label.fileButton p{
+  font-family: 'Oswald', sans-serif;
+  color: #666;
+  text-align: center;
+  font-size:80%;
+  position:absolute;
+  bottom:7px;
+  left:17px;
+  cursor:pointer;
+  }
+#linkIntro{
+  position:absolute;
+  top:200px;
+  }
+#modernBrowserOverlay{
+  width:375px;
+  height: 200px;
+  z-index:1000;
+  top:20%;
+  left:-535px;
+  opacity:0.0;
+  }
+.overlay{
+  background:#333;
+  position:absolute;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 5px 1px #C2C227, 0px 1px 0 #1d2c4d, 0 6px 0px #1f3053, 0 6px 4px 1px #111111;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #fff;
+  }
+p{
+  font-family: 'Oswald', sans-serif;
+  color: #F0F;
+  }
+#scrubberBar{
+  width:4px;
+  opacity:1;
+  }
+ul#buttons{
+  list-style: none;
+  }
+ul#buttons li{
+  float:left;
+  }
+.unselectable{ 
+  -moz-user-select: none; 
+  -khtml-user-select: none; 
+  -webkit-user-select: none; 
+  -o-user-select: none; 
+  }
+.verticalLine{
+  background: #F0F;
+  width: 2px;
+  height:300px;
+  position:absolute;
+  top:106px;
+  left:-25px;
+  cursor:w-resize;
+  opacity:.9;
+  z-index:50;
+  }
+.verticalLine p{
+  font-family: 'Oswald', sans-serif;
+  color: #FFFF51;
+  position:absolute;
+  bottom: -15px;
+  left:6px;
+  }
+#waveHolder{
+  height:300px;
+  background-image:url(../img/defaultImg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  cursor:text;
+  }
+.welcomeText{
+  margin-top:0px;
+  }

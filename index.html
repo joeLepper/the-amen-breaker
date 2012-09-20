@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+  <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+</head>
+
+<body class="unselectable">
+  <div class="blocker"></div>
+  <div id="headerText">
+      <h1>The Amen Breaker</h1>
+  </div>
+  <br/>
+  <div id="waveHolder"></div>
+  <div class="verticalLine" id="verticalLine0"><p>Q</p></div>
+  <div class="verticalLine" id="verticalLine1"><p>W</p></div>
+  <div class="verticalLine" id="verticalLine2"><p>E</p></div>
+  <div class="verticalLine" id="verticalLine3"><p>R</p></div>
+  <div class="verticalLine" id="verticalLine4"><p>T</p></div>
+  <div class="verticalLine" id="verticalLine5"><p>Y</p></div>
+  <div class="verticalLine" id="verticalLine6"><p>U</p></div>
+  <div class="verticalLine" id="verticalLine7"><p>I</p></div>
+  <div class="verticalLine" id="verticalLine8"></div>
+  <div class="verticalLine" id="scrubberBar"></div>
+  <div id="highlight"></div>
+  <br/>
+  
+  <ul id="buttons">
+      <li><button class="punch" id="cancel">Clear</button></li>
+	  <li><label id="fileButton" class="fileButton"><p>Choose File</p><input type="file" id="your-files" name="file" class="fileInput"></label></li>
+      <li><button class="punch" id="instructions">Instructions</button></li>
+  </ul>
+  
+  <div id="instructionOverlay" class="overlay">
+    <h1 id="instructionHeader">Instructions</h1>
+    <ul class="instructionText">
+        	<li>Press space to play or pause the loop</li> 
+            <li>Use your mouse to select a section of the sound to loop through</li> 
+            <li>Use the keys Q, W, E, R, T, Y, U, and I to jump to different points in the loop</li>
+            <li>After setting a loop, each jump point can be adjusted using your mouse</li>
+            <li>Load your own MP3 and try out something new</li>
+    </ul>
+    <p class="instructionText" id="linkIntro">What the Hell is the <a href="http://youtu.be/5SaFTm2bcac" target="_blank">Amen Break</a>?
+    </p>
+    <button class="punch" id="dismiss">OK</button>
+  </div>
+  
+  <div id="modernBrowserOverlay" class="overlay">
+    <h1 id="instructionHeader">Oh no!</h1>
+    <p class="instructionText">It looks like your browser doesn't support the Web Audio API yet! But that's OK. You can still enjoy it by downloading a <a href="http://www.google.com/chrome" target="_blank">modern browser</a>.</p>
+  </div>
+  
+  <script type="text/javascript" src="js/shuffler.js"></script>
+</body>
+</html>
